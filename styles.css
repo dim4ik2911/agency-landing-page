@@ -1,3 +1,71 @@
-header img {
-  background-color: red;
+html {
+  font-size: 62.5%;
+  font-family: "Barlow", sans-serif;
+  color: white;
 }
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("./images/mobile/image-header.jpg");
+  height: 53.8rem;
+  background-size: contain;
+  position: relative;
+}
+
+header nav {
+  padding: 3.3rem 2.4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav #logo {
+  height: 2.4rem;
+}
+
+header nav #hamburger-menu {
+  height: 1.8rem;
+}
+
+header nav ul {
+  display: none;
+}
+
+header div {
+  width: 100%;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+header div h1 {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+header .mobile-navigation {
+  width: 32.9rem;
+  height: 25.2rem;
+  -webkit-clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+  background-color: white;
+  position: absolute;
+  top: 7.7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+header .mobile-navigation ul {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
