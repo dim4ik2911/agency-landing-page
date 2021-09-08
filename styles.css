@@ -53,8 +53,9 @@ header div h1 {
 }
 
 header .mobile-navigation {
+  display: none;
   width: 32.9rem;
-  height: 25.2rem;
+  height: 32.9rem;
   -webkit-clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
           clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
   background-color: white;
@@ -63,9 +64,46 @@ header .mobile-navigation {
   left: 0;
   right: 0;
   margin: 0 auto;
+  padding-top: 0;
 }
 
 header .mobile-navigation ul {
-  text-decoration: none;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-navigation ul li:first-child {
+  margin-top: 5.8rem;
+}
+
+header .mobile-navigation ul li {
+  list-style-type: none;
+  color: #808397;
+  font-size: 2rem;
+  margin-top: 3.5rem;
+}
+
+header .mobile-navigation ul li:last-child {
+  background-color: #fbd600;
+  color: #24303e;
+  margin-top: 2.8rem;
+  padding: 2rem 3rem;
+  border-radius: 28px;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
