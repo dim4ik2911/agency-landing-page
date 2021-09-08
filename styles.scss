@@ -16,6 +16,7 @@ header {
   height: 53.8rem;
 
   background-size: contain;
+  background-repeat: no-repeat;
 
   position: relative;
 
@@ -39,12 +40,14 @@ header {
   div {
     width: 100%;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 5.9rem;
 
     h1 {
       font-family: "Fraunces", serif;
       font-size: 4rem;
+      letter-spacing: 0.625rem;
       text-transform: uppercase;
+      margin-bottom: 4.8rem;
     }
   }
 
@@ -90,6 +93,58 @@ header {
         font-family: "Fraunces", serif;
         text-transform: uppercase;
         font-size: 1.5rem;
+      }
+    }
+  }
+}
+main {
+  div {
+    img {
+      height: 31.2rem;
+    }
+  }
+
+  .paragraph {
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+
+    h2 {
+      font-family: "Fraunces", serif;
+      font-size: 3.2rem;
+      color: #24303e;
+    }
+
+    p {
+      color: #808397;
+      font-size: 1.8rem;
+      line-height: 3rem;
+
+      padding: 0rem 0rem 1.2rem;
+    }
+
+    h5 {
+      color: #24303e;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      font-family: "Fraunces", serif;
+      width: 13.5rem;
+      margin: 0 auto;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        width: 13.5rem;
+
+        margin: 1.2rem auto 0;
+        text-align: center;
+        border-top: 1rem solid #fbd600;
+        opacity: 0.25;
+        border-radius: 10px;
+        content: "";
+        z-index: -1;
       }
     }
   }
