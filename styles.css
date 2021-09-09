@@ -14,8 +14,9 @@ body {
 header {
   background-image: url("./images/mobile/image-header.jpg");
   height: 53.8rem;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
   position: relative;
 }
 
@@ -110,29 +111,30 @@ header .mobile-navigation ul li:last-child {
   font-size: 1.5rem;
 }
 
-main div img {
-  height: 31.2rem;
+main div .main-image img {
+  width: 100%;
 }
 
-main .paragraph {
+main div .main-paragraph {
   padding: 3.5rem 2.5rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
-main .paragraph h2 {
+main div .main-paragraph h2 {
   font-family: "Fraunces", serif;
   font-size: 3.2rem;
   color: #24303e;
 }
 
-main .paragraph p {
+main div .main-paragraph p {
   color: #808397;
   font-size: 1.8rem;
   line-height: 3rem;
   padding: 0rem 0rem 1.2rem;
 }
 
-main .paragraph h5 {
+main div .main-paragraph h5 {
   color: #24303e;
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -144,7 +146,7 @@ main .paragraph h5 {
   position: relative;
 }
 
-main .paragraph h5:before {
+main div .main-paragraph h5:before {
   position: absolute;
   left: 0;
   width: 13.5rem;
@@ -155,5 +157,9 @@ main .paragraph h5:before {
   border-radius: 10px;
   content: "";
   z-index: -1;
+}
+
+main div .main-paragraph .stand-out:before {
+  border-top: 1rem solid #fe7766;
 }
 /*# sourceMappingURL=styles.css.map */
