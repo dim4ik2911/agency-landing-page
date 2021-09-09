@@ -162,4 +162,46 @@ main div .main-paragraph h5:before {
 main div .main-paragraph .stand-out:before {
   border-top: 1rem solid #fe7766;
 }
+
+section div {
+  height: 60rem;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div h2 {
+  font-size: 2.8rem;
+  font-family: "Fraunces", serif;
+  margin-left: -1rem;
+}
+
+section div p {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.7rem;
+  margin: 0.7rem 1.5rem 6rem;
+}
+
+section .section-1 {
+  color: #24554a;
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+}
+
+section .section-2 {
+  color: #19536c;
+  background-image: url("./images/mobile/image-photography.jpg");
+}
 /*# sourceMappingURL=styles.css.map */
