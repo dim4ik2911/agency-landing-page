@@ -11,6 +11,16 @@ body {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+  margin: 0;
+}
+
 header {
   background-image: url("./images/mobile/image-header.jpg");
   height: 53.8rem;
@@ -49,7 +59,6 @@ header div {
 }
 
 header div h1 {
-  font-family: "Fraunces", serif;
   font-size: 4rem;
   letter-spacing: 0.625rem;
   text-transform: uppercase;
@@ -58,7 +67,7 @@ header div h1 {
 
 header .mobile-navigation {
   display: none;
-  width: 32.9rem;
+  width: 88%;
   height: 32.9rem;
   -webkit-clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
           clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
@@ -122,7 +131,6 @@ main div .main-paragraph {
 }
 
 main div .main-paragraph h2 {
-  font-family: "Fraunces", serif;
   font-size: 3.2rem;
   color: #24303e;
 }
@@ -184,8 +192,6 @@ section div {
 
 section div h2 {
   font-size: 2.8rem;
-  font-family: "Fraunces", serif;
-  margin-left: -1rem;
 }
 
 section div p {
@@ -203,5 +209,75 @@ section .section-1 {
 section .section-2 {
   color: #19536c;
   background-image: url("./images/mobile/image-photography.jpg");
+}
+
+article h3 {
+  color: #a7aaad;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin: 6.2rem 0 6.4rem;
+}
+
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+article div img {
+  border-radius: 50%;
+  width: 7.2rem;
+  margin-bottom: 1.8rem;
+}
+
+article div p {
+  color: #5b636d;
+  line-height: 3.2rem;
+  font-size: 1.8rem;
+  color: #5b636d;
+  margin-bottom: 2.6rem;
+  padding: 0 3.3rem;
+}
+
+article div h4 {
+  color: #24303e;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+article div h5 {
+  color: #a7aaad;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 7rem;
+}
+
+article div h5:last-child {
+  margin-bottom: 9rem;
+}
+
+.bottom-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.bottom-images img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
