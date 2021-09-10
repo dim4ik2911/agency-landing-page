@@ -55,7 +55,7 @@ header nav ul {
 header div {
   width: 100%;
   text-align: center;
-  padding-top: 5.9rem;
+  padding-top: 8.5rem;
 }
 
 header div h1 {
@@ -125,7 +125,7 @@ main div .main-image img {
 }
 
 main div .main-paragraph {
-  padding: 3.5rem 2.5rem;
+  padding: 6.5rem 2.5rem 4rem;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -139,7 +139,7 @@ main div .main-paragraph p {
   color: #808397;
   font-size: 1.8rem;
   line-height: 3rem;
-  padding: 0rem 0rem 1.2rem;
+  padding: 0rem 0rem 1.3rem;
 }
 
 main div .main-paragraph h5 {
@@ -198,7 +198,7 @@ section div p {
   font-size: 1.6rem;
   text-align: center;
   line-height: 2.7rem;
-  margin: 0.7rem 1.5rem 6rem;
+  margin: 2.7rem 1.5rem 6rem;
 }
 
 section .section-1 {
@@ -240,7 +240,7 @@ article div {
 article div img {
   border-radius: 50%;
   width: 7.2rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 article div p {
@@ -249,7 +249,8 @@ article div p {
   font-size: 1.8rem;
   color: #5b636d;
   margin-bottom: 2.6rem;
-  padding: 0 3.3rem;
+  padding: 0 2.3rem 0.2rem;
+  line-height: -1.3rem;
 }
 
 article div h4 {
@@ -266,7 +267,7 @@ article div h5 {
   margin-bottom: 7rem;
 }
 
-article div h5:last-child {
+article div #last-client {
   margin-bottom: 9rem;
 }
 
@@ -279,5 +280,53 @@ article div h5:last-child {
 
 .bottom-images img {
   width: 100%;
+}
+
+footer {
+  background-color: #90d4c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7rem 4rem 5rem;
+}
+
+footer img {
+  width: 17rem;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+footer .footer-options {
+  color: #458d7e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 7.2rem;
+}
+
+footer .footer-options p {
+  font-size: 1.8rem;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 16.4rem;
+}
+
+footer .social-media img {
+  width: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
