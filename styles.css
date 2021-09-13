@@ -120,29 +120,39 @@ header .mobile-navigation ul li:last-child {
   font-size: 1.5rem;
 }
 
-main div .main-image img {
+main .main {
+  font-size: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ()[1fr];
+      grid-template-rows: repeat(1fr);
+  -ms-grid-columns: ()[1fr];
+      grid-template-columns: repeat(1fr);
+}
+
+main .main .main-image img {
   width: 100%;
 }
 
-main div .main-paragraph {
+main .main .main-paragraph {
   padding: 6.5rem 2.5rem 4rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-main div .main-paragraph h2 {
+main .main .main-paragraph h2 {
   font-size: 3.2rem;
   color: #24303e;
 }
 
-main div .main-paragraph p {
+main .main .main-paragraph p {
   color: #808397;
   font-size: 1.8rem;
   line-height: 3rem;
   padding: 0rem 0rem 1.3rem;
 }
 
-main div .main-paragraph h5 {
+main .main .main-paragraph h5 {
   color: #24303e;
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -154,7 +164,7 @@ main div .main-paragraph h5 {
   position: relative;
 }
 
-main div .main-paragraph h5:before {
+main .main .main-paragraph h5:before {
   position: absolute;
   left: 0;
   width: 13.5rem;
@@ -167,7 +177,7 @@ main div .main-paragraph h5:before {
   z-index: -1;
 }
 
-main div .main-paragraph .stand-out:before {
+main .main .main-paragraph .stand-out:before {
   border-top: 1rem solid #fe7766;
 }
 
@@ -446,49 +456,38 @@ footer .social-media img {
     text-transform: uppercase;
     font-size: 1.5rem;
   }
-  main div .main-image img {
-    width: 100%;
+  main .main {
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
-  main div .main-paragraph {
-    padding: 6.5rem 2.5rem 4rem;
+  main .main .first-image {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  main .main .main-paragraph {
+    padding: 15.8rem 8rem 4rem 11rem;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+  main .main .main-paragraph h2 {
+    font-size: 4rem;
+    padding-right: 10rem;
+  }
+  main .main .main-paragraph p {
+    padding: 1.5rem 7rem 2.2rem 0rem;
+  }
+  main .main .main-paragraph h5 {
+    float: left;
     text-align: center;
-    margin-bottom: 3rem;
   }
-  main div .main-paragraph h2 {
-    font-size: 3.2rem;
-    color: #24303e;
-  }
-  main div .main-paragraph p {
-    color: #808397;
-    font-size: 1.8rem;
-    line-height: 3rem;
-    padding: 0rem 0rem 1.3rem;
-  }
-  main div .main-paragraph h5 {
-    color: #24303e;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    font-family: "Fraunces", serif;
-    width: 13.5rem;
-    margin: 0 auto;
-    position: relative;
-  }
-  main div .main-paragraph h5:before {
-    position: absolute;
-    left: 0;
-    width: 13.5rem;
-    margin: 1.2rem auto 0;
-    text-align: center;
-    border-top: 1rem solid #fbd600;
-    opacity: 0.25;
-    border-radius: 10px;
-    content: "";
-    z-index: -1;
-  }
-  main div .main-paragraph .stand-out:before {
-    border-top: 1rem solid #fe7766;
+  main .main .first-paragraph {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    padding: 15.8rem 2rem 4rem 16.8rem;
   }
   section div {
     height: 60rem;

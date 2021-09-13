@@ -107,7 +107,11 @@ header {
   }
 }
 main {
-  div {
+  .main {
+    font-size: 0;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-template-columns: repeat(1fr);
     .main-image {
       img {
         width: 100%;
@@ -401,63 +405,42 @@ footer {
     }
   }
   main {
-    div {
-      .main-image {
-        img {
-          width: 100%;
-        }
+    .main {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+
+      .first-image {
+        grid-column: 2;
       }
+
       .main-paragraph {
-        padding: 6.5rem 2.5rem 4rem;
-        text-align: center;
-        margin-bottom: 3rem;
+        padding: 15.8rem 8rem 4rem 11rem;
+        text-align: left;
+        margin-bottom: 0rem;
 
         h2 {
-          font-size: 3.2rem;
-          color: #24303e;
+          font-size: 4rem;
+          padding-right: 10rem;
         }
 
         p {
-          color: #808397;
-          font-size: 1.8rem;
-          line-height: 3rem;
-
-          padding: 0rem 0rem 1.3rem;
+          padding: 1.5rem 7rem 2.2rem 0rem;
         }
 
         h5 {
-          color: #24303e;
-          font-size: 1.5rem;
-          line-height: 2.5rem;
-          letter-spacing: 0.1rem;
-          text-transform: uppercase;
-          font-family: "Fraunces", serif;
-          width: 13.5rem;
-          margin: 0 auto;
-          position: relative;
-
-          &:before {
-            position: absolute;
-            left: 0;
-            width: 13.5rem;
-
-            margin: 1.2rem auto 0;
-            text-align: center;
-            border-top: 1rem solid #fbd600;
-            opacity: 0.25;
-            border-radius: 10px;
-            content: "";
-            z-index: -1;
-          }
+          float: left;
+          text-align: center;
         }
-        .stand-out {
-          &:before {
-            border-top: 1rem solid #fe7766;
-          }
-        }
+      }
+      .first-paragraph {
+        grid-column: 1;
+        grid-row: 1;
+
+        padding: 15.8rem 2rem 4rem 16.8rem;
       }
     }
   }
+  //done until
   section {
     div {
       height: 60rem;
